@@ -60,8 +60,8 @@ router.post('/push/unsubscribe', authRequired, asyncHandler(async (req, res) => 
 router.post('/push/test', authRequired, asyncHandler(async (req, res) => {
   if (!ready) return res.status(503).json({ error: 'Push notifications are not configured.' });
   const sent = await sendToUsers([req.user.id], {
-    title: 'Cordia background notifications are on',
-    body: 'You will get alerts here when Cordia is closed.',
+    title: 'Urban Lounge background notifications are on',
+    body: 'You will get alerts here when Urban Lounge is closed.',
     tag: 'cordia-test',
     url: '/'
   });
