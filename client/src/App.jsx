@@ -22,7 +22,7 @@ function LoadingScreen() {
       <div className="splash-orbit">
         <Logo size={64} />
       </div>
-      <p>Loading Cordia</p>
+      <p>Loading Urban Lounge</p>
     </div>
   );
 }
