@@ -70,7 +70,7 @@ export async function enableBackgroundPush() {
   }
 
   const registration = await registerServiceWorker();
-  if (!registration) throw new Error('Could not register the Cordia service worker.');
+  if (!registration) throw new Error('Could not register the Urban Lounge service worker.');
   const { publicKey } = await api.get('/api/push/public-key');
   let subscription = await registration.pushManager.getSubscription();
   if (!subscription) {
