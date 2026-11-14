@@ -49,7 +49,7 @@ async function sessionPayload(req, user, token) {
     // /uploads assets. It unlocks uploads only.
     uploadToken: issueUploadToken(user.id).token
   };
-  if (req.get('X-Urban Lounge-Client') === 'native') payload.token = token;
+  if (req.get('X-Cordia-Client') === 'native') payload.token = token;
   return payload;
 }
 
