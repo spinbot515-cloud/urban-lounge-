@@ -1,7 +1,7 @@
 {
   "id": "/",
-  "name": "Cordia",
-  "short_name": "Cordia",
+  "name": "Urban Lounge",
+  "short_name": "Urban Lounge",
   "description": "A calmer place to talk, hang out, and build communities.",
   "start_url": "/",
   "scope": "/",
@@ -36,7 +36,7 @@
   ],
   "shortcuts": [
     {
-      "name": "Open Cordia",
+      "name": "Open Urban Lounge",
       "short_name": "Open",
       "url": "/",
       "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
