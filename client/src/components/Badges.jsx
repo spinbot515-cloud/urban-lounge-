@@ -22,15 +22,15 @@ import bugHunterImage from '../assets/badges/badge_bug_hunter.png';
 import starImage from '../assets/badges/badge_shining_star.png';
 
 export const BADGE_META = {
-  founder: { label: 'Founder', color: '#f5b544', icon: Sparkles, image: founderImage, description: 'Created the very first Cordia account.' },
-  pioneer: { label: 'Pioneer', color: '#2dd4bf', icon: Rocket, image: pioneerImage, description: 'Joined during the first wave of Cordia.' },
-  staff_member: { label: 'Staff Member', color: '#c7bcff', icon: BadgeCheck, image: staffMemberImage, description: 'Part of the Cordia crew.' },
+  founder: { label: 'Founder', color: '#f5b544', icon: Sparkles, image: founderImage, description: 'Created the very first Urban Lounge account.' },
+  pioneer: { label: 'Pioneer', color: '#2dd4bf', icon: Rocket, image: pioneerImage, description: 'Joined during the first wave of Urban Lounge.' },
+  staff_member: { label: 'Staff Member', color: '#c7bcff', icon: BadgeCheck, image: staffMemberImage, description: 'Part of the Urban Lounge crew.' },
   chatterbox: { label: 'Chatterbox', color: '#a78bfa', icon: MessageSquare, image: chatterboxImage, description: 'Sent 100 messages.' },
   voice_veteran: { label: 'Voice Veteran', color: '#38bdf8', icon: Mic, image: voiceVeteranImage, description: 'Spent an hour talking in voice channels.' },
   helper: { label: 'Helper', color: '#f472b6', icon: HeartHandshake, image: helperImage, description: 'Recognised for helping others.' },
   bug_hunter: { label: 'Bug Hunter', color: '#fb7185', icon: Bug, image: bugHunterImage, description: 'Found and reported a nasty bug.' },
   star: { label: 'Shining Star', color: '#facc15', icon: Star, image: starImage, description: 'Made the community brighter.' },
-  supporter: { label: 'Supporter', color: '#f5b544', icon: Heart, description: 'Helped keep Cordia running.' }
+  supporter: { label: 'Supporter', color: '#f5b544', icon: Heart, description: 'Helped keep Urban Lounge running.' }
 };
 
 export const GRANTABLE_BADGES = ['helper', 'bug_hunter', 'star', 'staff_member', 'supporter'];
