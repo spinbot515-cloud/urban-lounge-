@@ -76,7 +76,7 @@ export const RELEASES = [
     title: 'Updates that stay out of the way',
     items: [
       'Restart and install no longer brings the installer wizard back up. The update applies silently and the app comes straight back.',
-      'Closing Cordia applies a downloaded update on its own, so the next time you open it you are already on the new version.',
+      'Closing Urban Lounge applies a downloaded update on its own, so the next time you open it you are already on the new version.',
       'When an update finishes downloading, a toast says so. Until now the only sign was the version number changing after a restart.'
     ]
   },
@@ -107,13 +107,13 @@ export const RELEASES = [
     date: '2026-11-03',
     title: 'Free, and staying free',
     items: [
-      'Cordia Pro is gone. There is no paid plan, no checkout and no card on file: every feature is in every account, and 50 MB uploads with 5 GB of storage are now the standard rather than something to buy.',
+      'Urban Lounge Pro is gone. There is no paid plan, no checkout and no card on file: every feature is in every account, and 50 MB uploads with 5 GB of storage are now the standard rather than something to buy.',
       'Settings → Support is a tip jar. Scan the code with your phone to leave a one-off donation; it buys nothing and unlocks nothing, because nothing is locked.',
       'Settings → Storage has its own tab now. It shows what your uploads are using and lets you delete the ones nothing points at - it used to sit inside the paywall.',
       'The Supporter badge is granted by hand from the admin console, to anyone who chips in.',
       'An attachment that is too large now says what the limit is instead of offering an upgrade.',
       'The landing page and the terms describe donations instead of subscriptions.',
-      'Cordia now asks for a tip now and then when you open it: Codi, the QR, and two buttons. At most once a fortnight, never in your first three days, and "Don\'t show this again" ends it permanently.',
+      'Urban Lounge now asks for a tip now and then when you open it: Codi, the QR, and two buttons. At most once a fortnight, never in your first three days, and "Don\'t show this again" ends it permanently.',
       'Codi is the logo. The old geometric mark is gone from the header, the tab icon, the app icon, the splash screen and the link preview, and the notification icon is his sparkle instead of a telephone.',
       'Link Spotify from Settings and your status shows what you are playing - the track under your name, in the member list, and on your profile with album art and a progress bar. The permission is read-only, you can hide the track without unlinking, and unlinking deletes the tokens.',
       'The soundboard is two permissions now: one to play sounds, one to add and remove them. Playing was open to everyone and uploading required Manage server, so every group kept exactly what it already had.',
@@ -142,7 +142,7 @@ export const RELEASES = [
       'The presence dot in settings is a full circle; the account card was clipping it in half.',
       'The "Free forever" badges are gone. The free plan still says, in one sentence, that it stays free forever.',
       'Encrypted DMs unlock on the web build again. The Content Security Policy was blocking the WebAssembly module the key derivation runs on.',
-      'Pictures open in Cordia instead of a browser window: click one in a message or in a gallery and it fills the window, with download and close in the corner. Escape closes it.',
+      'Pictures open in Urban Lounge instead of a browser window: click one in a message or in a gallery and it fills the window, with download and close in the corner. Escape closes it.',
       'Markdown works where the writing is: documents, forum guidelines, event notes, server descriptions and the welcome card all render headings, lists, quotes, code and links.',
     ]
   },
@@ -157,7 +157,7 @@ export const RELEASES = [
       'List channels: shared checklists with a tick box and an assignee on every row.',
       'Media channels: every picture and file posted in the channel, in one grid, with older pages on demand.',
       'Edit history: open any edited message and see what it said before, word by word, with the changes marked.',
-      'Reminders: ask Cordia to remind you about a message in an hour, tonight, tomorrow, or at a time you pick. They arrive as a notification and stay listed for a week.',
+      'Reminders: ask Urban Lounge to remind you about a message in an hour, tonight, tomorrow, or at a time you pick. They arrive as a notification and stay listed for a week.',
       'Custom emoji everywhere: the picker is no longer only in the composer. Your bio and every server you are in share one pool of emotes.',
       '200 free emote slots and 100 sticker slots per server - four times what Discord gives away, with no boost required.',
       'Richer profiles: social links, a games list, real activity counters, and a bio per server - a different introduction for work and for play.',
@@ -173,10 +173,10 @@ export const RELEASES = [
     date: '2026-10-29',
     title: 'Catch up, your way',
     items: [
-      'Catch-up banner: when you come back to a channel, Cordia tells you how many messages you missed, who sent them, and lets you jump straight to where you left off.',
+      'Catch-up banner: when you come back to a channel, Urban Lounge tells you how many messages you missed, who sent them, and lets you jump straight to where you left off.',
       'Mark unread: park a conversation on purpose and it will be waiting for you exactly where you left it.',
       'Unread state is now honest — opening a channel no longer silently clears a backlog you never read.',
-      'App updates: Cordia can check for, download, and install new versions without a reinstall.',
+      'App updates: Urban Lounge can check for, download, and install new versions without a reinstall.',
       'Privacy controls: choose who can send friend requests, who can read your bio and badges, and whether you show as online or typing.',
       'Blocked people are listed in Settings → Privacy, with an unblock button right there.',
       'Profile banners: upload an image for your profile header, or keep a colour if you prefer.',
@@ -219,7 +219,7 @@ export const RELEASES = [
       'Bots are spread across processes by server, so a large deployment no longer has one process doing all the work.',
       'Open connections are now counted across the whole server rather than per process, so the limit means what it says.',
       'Edit history: click (edited) on any message to see what it said before, with the changed words marked.',
-      'Remind me: right-click a message and pick a time — an hour, tonight, tomorrow morning — and Cordia brings it back to you.',
+      'Remind me: right-click a message and pick a time — an hour, tonight, tomorrow morning — and Urban Lounge brings it back to you.',
       'Bookmarks and reminders share one panel now, so everything you meant to come back to is in one place.',
       "Fixed: the 'Be careful here' warning offered Report but had no Block button."
     ]
