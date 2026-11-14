@@ -45,7 +45,7 @@ export default function RecoveryCodeModal({
 
   function downloadCode() {
     const contents = [
-      'Cordia recovery code',
+      'Urban Lounge recovery code',
       '',
       'Keep this code offline. It can restore your encrypted messages if you forget your password.',
       'Anyone with this code and access to your account can read your encrypted messages.',
