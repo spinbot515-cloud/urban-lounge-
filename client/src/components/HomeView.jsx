@@ -358,7 +358,7 @@ export default function HomeView({
           <div className="add-friend-panel">
             <div className="add-friend-card">
               <h3>Add a friend</h3>
-              <p>Enter their exact Cordia username. They will receive a request you can cancel.</p>
+              <p>Enter their exact Urban Lounge username. They will receive a request you can cancel.</p>
               <form className="add-friend-form" onSubmit={submitAdd}>
                 <input
                   value={addName}
