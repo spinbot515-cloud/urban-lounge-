@@ -191,7 +191,7 @@ export default function AuthorizePage({ clientId, user, onAuth }) {
                 </div>
               </div>
               <button className="btn btn-primary invite-copy" onClick={() => window.location.assign('/app')}>
-                <CheckCircle2 size={16} /> Open Cordia
+                <CheckCircle2 size={16} /> Open Urban Lounge
               </button>
             </>
           ) : (
