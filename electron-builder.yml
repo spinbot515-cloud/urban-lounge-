@@ -1,4 +1,4 @@
-appId: app.urban-lounge.client
+appId: app.cordia.client
 productName: Urban Lounge
 copyright: Copyright 2026 Urban Lounge
 directories:
@@ -17,7 +17,7 @@ win:
 nsis:
   # No spaces in the artifact name: every script that installs this file
   # would otherwise need to quote it.
-  artifactName: Urban Lounge-Setup-${version}.${ext}
+  artifactName: Urban-Lounge-Setup-${version}.${ext}
   oneClick: false
   perMachine: false
   allowToChangeInstallationDirectory: true
