@@ -220,7 +220,7 @@ export default function ServerDataSettings({ server, me, canExport, canImport, o
       <div className="settings-section-head">
         <div>
           <h3>Import and export</h3>
-          <p>Move a community into Cordia or take a portable copy with you.</p>
+          <p>Move a community into Urban Lounge or take a portable copy with you.</p>
         </div>
         <ShieldCheck size={20} className="server-data-shield" />
       </div>
@@ -236,7 +236,7 @@ export default function ServerDataSettings({ server, me, canExport, canImport, o
             </span>
             <div>
               <h4>Export server</h4>
-              <p>Download categories, channels, groups, and messages as a Cordia JSON file.</p>
+              <p>Download categories, channels, groups, and messages as a Urban Lounge JSON file.</p>
             </div>
           </div>
 
@@ -249,7 +249,7 @@ export default function ServerDataSettings({ server, me, canExport, canImport, o
             />
             <span>
               <strong>Include message history</strong>
-              <small>Message content, timestamps, and Cordia-hosted attachments.</small>
+              <small>Message content, timestamps, and Urban Lounge-hosted attachments.</small>
             </span>
           </label>
 
@@ -275,7 +275,7 @@ export default function ServerDataSettings({ server, me, canExport, canImport, o
             <div>
               <h4>Import server data</h4>
               <p>
-                Bring in a Cordia export, or Discord guild.json, channels.json, and roles.json.
+                Bring in a Urban Lounge export, or Discord guild.json, channels.json, and roles.json.
               </p>
             </div>
           </div>
@@ -345,7 +345,7 @@ export default function ServerDataSettings({ server, me, canExport, canImport, o
             <div>
               <h4>Import preview</h4>
               <p>
-                From {preview.source === 'discord' ? 'Discord' : 'Cordia'}
+                From {preview.source === 'discord' ? 'Discord' : 'Urban Lounge'}
                 {preview.sourceName ? `: ${preview.sourceName}` : ''}
               </p>
             </div>
