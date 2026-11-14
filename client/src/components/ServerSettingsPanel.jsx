@@ -914,7 +914,7 @@ export default function ServerSettingsPanel({
           <div className="settings-section-head">
             <div>
               <h3>Server overview</h3>
-              <p>Name, icon, description, and accent shown across Cordia.</p>
+              <p>Name, icon, description, and accent shown across Urban Lounge.</p>
             </div>
             {canManageServer && (
               <button
