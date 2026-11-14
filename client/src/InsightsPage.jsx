@@ -34,7 +34,7 @@ export default function InsightsPage() {
       <header className="insights-page-head">
         <Link className="btn btn-ghost btn-sm insights-back" to="/">
           <ArrowLeft size={15} />
-          Back to Cordia
+          Back to Urban Lounge
         </Link>
         <div className="insights-page-title">
           <ServerIcon server={server || { name: '?' }} />
