@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Download, X } from 'lucide-react';
 
-// Pictures open here, in the app. A target="_blank" anchor leaves Cordia behind
+// Pictures open here, in the app. A target="_blank" anchor leaves Urban Lounge behind
 // and, on the desktop build, hands the file to the operating system - so the
 // conversation you were reading disappears the moment you look at an image.
 export default function ImageViewer({ src, name, onClose }) {
