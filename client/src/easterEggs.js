@@ -26,7 +26,7 @@ const MESSAGE_TRIGGERS = new Map([
   ['i love you', ['hearts', 'Aww.']],
   [HEART, ['hearts', 'Aww.']],
   ['hello there', ['toast', 'General Kenobi.']],
-  ['i am inevitable', ['toast', 'And I am Cordia.']],
+  ['i am inevitable', ['toast', 'And I am Urban Lounge.']],
   ['there is no spoon', ['toast', "Then you'll see that it is not the spoon that bends."]],
   ['sudo make me a sandwich', ['toast', 'Okay.']],
   ['42', ['toast', 'The answer to everything.']]
