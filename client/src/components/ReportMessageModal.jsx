@@ -42,7 +42,7 @@ export default function ReportMessageModal({ message, plaintext = '', onClose, o
   return (
     <Modal
       title="Report message"
-      subtitle={`Report ${message.author?.displayName || 'this user'} to the Cordia team.`}
+      subtitle={`Report ${message.author?.displayName || 'this user'} to the Urban Lounge team.`}
       onClose={onClose}
       width={520}
       footer={
@@ -99,7 +99,7 @@ export default function ReportMessageModal({ message, plaintext = '', onClose, o
             <ShieldAlert size={16} />
             <p>
               This is an encrypted direct message. The visible text above will be shared with the
-              Cordia team as evidence. Nobody can decrypt it automatically.
+              Urban Lounge team as evidence. Nobody can decrypt it automatically.
             </p>
           </div>
         )}
