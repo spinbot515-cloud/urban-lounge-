@@ -57,7 +57,7 @@ export default function SettingsModal({ user, onClose, onSave, onLogout }) {
   return (
     <Modal
       title="Profile settings"
-      subtitle="Shape how you appear across Cordia."
+      subtitle="Shape how you appear across Urban Lounge."
       onClose={onClose}
       width={560}
       footer={
