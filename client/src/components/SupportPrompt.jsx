@@ -12,10 +12,10 @@ export default function SupportPrompt({ onClose, onNever }) {
     <Modal
       className="support-prompt-modal"
       width={520}
-      title="Cordia is free"
+      title="Urban Lounge is free"
       subtitle="Funded by the people who use it"
       onClose={onClose}
-      ariaLabel="Support Cordia"
+      ariaLabel="Support Urban Lounge"
       footer={
         <div className="support-prompt-actions">
           <button type="button" className="btn btn-ghost btn-sm" onClick={onNever}>
@@ -32,7 +32,7 @@ export default function SupportPrompt({ onClose, onNever }) {
         <div className="support-prompt-copy">
           <strong>No plan, no ads, no catch.</strong>
           <p>
-            Hosting and bandwidth are the only two bills Cordia has. If it has been useful to you,
+            Hosting and bandwidth are the only two bills Urban Lounge has. If it has been useful to you,
             a one-off tip pays a little of them - and nothing changes about your account if you
             would rather not.
           </p>
