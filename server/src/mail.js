@@ -27,7 +27,7 @@ const config = {
   secure: String(env('SMTP_SECURE', '')).toLowerCase() === 'true',
   user: env('SMTP_USER', ''),
   pass: env('SMTP_PASS', ''),
-  from: env('MAIL_FROM', 'Cordia <no-reply@cordia.ext.io>'),
+  from: env('MAIL_FROM', 'Urban Lounge <no-reply@cordia.ext.io>'),
   replyTo: env('MAIL_REPLY_TO', ''),
   // Set to "false" on a machine with no MTA. The queue still records the
   // message, so a developer can read the verification link out of the table
