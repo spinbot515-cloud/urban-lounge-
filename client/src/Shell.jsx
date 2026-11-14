@@ -327,7 +327,7 @@ export default function Shell({ user, setUser, onLoggedOut }) {
       if (announced === status.version) return;
       announced = status.version;
       showToast({
-        title: `Cordia ${status.version} is ready`,
+        title: `Urban Lounge ${status.version} is ready`,
         message: 'It installs itself the next time you close the app.'
       });
     });
@@ -343,7 +343,7 @@ export default function Shell({ user, setUser, onLoggedOut }) {
       await api.post('/api/reports', payload);
       showToast({
         title: 'Report submitted',
-        message: 'The Cordia team will review this message.'
+        message: 'The Urban Lounge team will review this message.'
       });
     } catch (error) {
       showToast({ type: 'error', title: 'Could not submit report', message: error.message });
@@ -472,7 +472,7 @@ export default function Shell({ user, setUser, onLoggedOut }) {
       const prefs = notificationPrefsRef.current;
       const current = dataRef.current;
       const fullPreview = msg.encrypted
-        ? 'New encrypted message. Open Cordia to decrypt.'
+        ? 'New encrypted message. Open Urban Lounge to decrypt.'
         : (msg.content || '').trim() || (msg.attachment ? 'Sent an attachment' : 'New message');
       const preview =
         fullPreview.length > 140 ? `${fullPreview.slice(0, 137).trimEnd()}...` : fullPreview;
@@ -789,7 +789,7 @@ export default function Shell({ user, setUser, onLoggedOut }) {
         const peerName = incoming.peer?.displayName || 'Someone';
         showDesktopNotification({
           title: `Incoming call from ${peerName}`,
-          body: 'Open Cordia to answer or decline.',
+          body: 'Open Urban Lounge to answer or decline.',
           tag: `call-${incoming.id}`,
           requireInteraction: true
         });
@@ -844,7 +844,7 @@ export default function Shell({ user, setUser, onLoggedOut }) {
       const count = mutedScopes[key] ? mentions : Math.max(unread[key] || 0, mentions);
       total += count;
     }
-    document.title = total > 0 ? `(${total > 99 ? '99+' : total}) Cordia` : 'Cordia';
+    document.title = total > 0 ? `(${total > 99 ? '99+' : total}) Urban Lounge` : 'Urban Lounge';
   }, [unread, mentionUnread, mutedScopes, data]);
 
   useEffect(() => {
@@ -2945,7 +2945,7 @@ onBackToList={() => setMobilePane('list')}
           onScheduled={() =>
             showToast({
               title: 'Reminder set',
-              message: 'Cordia will bring this message back when you asked.'
+              message: 'Urban Lounge will bring this message back when you asked.'
             })
           }
         />
