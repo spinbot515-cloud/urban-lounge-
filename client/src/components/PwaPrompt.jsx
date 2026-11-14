@@ -19,16 +19,16 @@ export default function PwaPrompt() {
 
   return (
     <>
-      <div className="pwa-prompt" role="region" aria-label="Install Cordia">
+      <div className="pwa-prompt" role="region" aria-label="Install Urban Lounge">
         <span className="pwa-prompt-icon">
           <Download size={17} />
         </span>
         <div className="pwa-prompt-copy">
-          <strong>Install Cordia</strong>
+          <strong>Install Urban Lounge</strong>
           <span>
             {ios
-              ? 'Add Cordia to your Home Screen for a full-screen app.'
-              : 'Launch Cordia like an app, with a faster offline-ready shell.'}
+              ? 'Add Urban Lounge to your Home Screen for a full-screen app.'
+              : 'Launch Urban Lounge like an app, with a faster offline-ready shell.'}
           </span>
         </div>
         <button type="button" className="btn btn-primary btn-sm" onClick={handleInstall}>
@@ -46,7 +46,7 @@ export default function PwaPrompt() {
 
       {showIosSteps && (
         <Modal
-          title="Install Cordia"
+          title="Install Urban Lounge"
           subtitle="Safari on iPhone or iPad"
           onClose={() => setShowIosSteps(false)}
           width={420}
