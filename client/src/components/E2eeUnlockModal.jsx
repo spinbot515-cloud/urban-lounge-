@@ -250,7 +250,7 @@ export default function E2eeUnlockModal({ user, onClose, onUnlocked }) {
             <span>
               <strong>Remember this device</strong>
               <small>
-                Store your unlocked key with your operating system's secure storage so Cordia
+                Store your unlocked key with your operating system's secure storage so Urban Lounge
                 can skip this prompt next time. Use “Forget this device” in Encryption settings
                 to remove it.
               </small>
