@@ -1,22 +1,21 @@
 {
-  "name": "cordia",
+  "name": "urban-lounge",
   "version": "1.0.0",
   "private": true,
-  "description": "Cordia - a realtime community platform with voice, video, friends, profiles, badges and an admin console.",
-  "author": "Cordia contributors",
+  "description": "Urban Lounge - a realtime community platform for chat, voice, video, and communities.",
+  "author": "Urban Lounge contributors",
   "license": "AGPL-3.0-only",
-  "homepage": "https://cordia.ext.io",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VilnisGrinbergs2000/Cordia.git"
+    "url": "git+https://github.com/spinbot515-cloud/urban-lounge-.git"
   },
   "bugs": {
-    "url": "https://github.com/VilnisGrinbergs2000/Cordia/issues"
+    "url": "https://github.com/spinbot515-cloud/urban-lounge-/issues"
   },
   "engines": {
     "node": ">=22"
   },
-  "desktopName": "cordia",
+  "desktopName": "urban-lounge",
   "main": "electron/main.cjs",
   "scripts": {
     "install:all": "npm install && npm install --prefix server && npm install --prefix client",
