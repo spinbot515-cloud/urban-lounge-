@@ -1,6 +1,6 @@
 {
   "appId": "app.cordia.client",
-  "appName": "Cordia",
+  "appName": "Urban Lounge",
   "webDir": "client/dist",
   "server": {
     "androidScheme": "https",
