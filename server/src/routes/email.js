@@ -14,7 +14,7 @@ const router = express.Router();
 
 // The link target is a page, not a JSON endpoint. People click these from a
 // mail client, so the response has to be readable by a browser that has no
-// JavaScript bundle, no session and no idea what Cordia is.
+// JavaScript bundle, no session and no idea what Urban Lounge is.
 
 function escapeHtml(value) {
   return String(value == null ? '' : value)
@@ -33,7 +33,7 @@ function page({ title, heading, body }) {
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="robots" content="noindex" />
 <meta name="color-scheme" content="dark" />
-<title>${escapeHtml(title)} · Cordia</title>
+<title>${escapeHtml(title)} · Urban Lounge</title>
 <style>
   :root { color-scheme: dark; }
   * { box-sizing: border-box; }
@@ -73,7 +73,7 @@ function page({ title, heading, body }) {
 </head>
 <body>
   <main class="card">
-    <p class="brand">Cordia</p>
+    <p class="brand">Urban Lounge</p>
     <h1>${escapeHtml(heading)}</h1>
     ${body}
   </main>
@@ -103,8 +103,8 @@ router.get(
       return sendPage(res, 400, {
         title: 'Link expired',
         heading: 'This link no longer works',
-        body: `<p>Confirmation links work once and expire after a day. Sign in to Cordia and ask for a new one from your settings.</p>
-               <div class="actions"><a class="button" href="${escapeHtml(appHref(req))}">Open Cordia</a></div>`
+        body: `<p>Confirmation links work once and expire after a day. Sign in to Urban Lounge and ask for a new one from your settings.</p>
+               <div class="actions"><a class="button" href="${escapeHtml(appHref(req))}">Open Urban Lounge</a></div>`
       });
     }
 
@@ -128,7 +128,7 @@ router.get(
       heading: 'Your email is confirmed',
       body: `<div class="notice ok">${escapeHtml(user.email)} is now attached to @${escapeHtml(user.username)}. We will use it for password resets and account notices, and nothing else.</div>
              <p>You can close this tab, or jump straight into the app.</p>
-             <div class="actions"><a class="button" href="${escapeHtml(appHref(req))}">Open Cordia</a></div>`
+             <div class="actions"><a class="button" href="${escapeHtml(appHref(req))}">Open Urban Lounge</a></div>`
     });
   })
 );
@@ -148,7 +148,7 @@ router.get(
         title: 'Link expired',
         heading: 'This reset link has expired',
         body: `<p>Reset links last an hour and work once. Ask for a fresh one from the sign-in page.</p>
-               <div class="actions"><a class="button" href="${escapeHtml(appHref(req))}">Open Cordia</a></div>`
+               <div class="actions"><a class="button" href="${escapeHtml(appHref(req))}">Open Urban Lounge</a></div>`
       });
     }
     const user = (await query('SELECT * FROM users WHERE id = $1', [row.user_id])).rows[0];
@@ -192,7 +192,7 @@ router.post(
         title: 'Could not reset',
         heading: 'That did not work',
         body: `<div class="notice bad">${escapeHtml(message)}</div>
-               <div class="actions"><a class="button" href="${escapeHtml(appHref(req))}">Back to Cordia</a></div>`
+               <div class="actions"><a class="button" href="${escapeHtml(appHref(req))}">Back to Urban Lounge</a></div>`
       });
 
     if (!row) return fail('This reset link has expired. Ask for a new one from the sign-in page.');
@@ -257,7 +257,7 @@ router.get(
       title: 'Unsubscribed',
       heading: 'You are off the list',
       body: `<div class="notice ok">No more product updates. You will still receive password resets and account notices, because those are part of the service.</div>
-             <div class="actions"><a class="button" href="${escapeHtml(appHref(req))}">Open Cordia</a></div>`
+             <div class="actions"><a class="button" href="${escapeHtml(appHref(req))}">Open Urban Lounge</a></div>`
     });
   })
 );
