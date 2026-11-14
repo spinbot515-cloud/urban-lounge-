@@ -948,7 +948,7 @@ export default function AdminPage({ user, setUser }) {
 
         <div className="admin-sidebar-foot">
           <Link className="admin-back-link" to="/">
-            <ArrowLeft size={15} /> Back to Cordia
+            <ArrowLeft size={15} /> Back to Urban Lounge
           </Link>
           <div className="admin-identity">
             <Avatar user={user} size={32} showPresence />
@@ -1011,7 +1011,7 @@ export default function AdminPage({ user, setUser }) {
                     </span>
                     <h2>Everything important, without the noise.</h2>
                     <p>
-                      Keep an eye on growth, community health, and the moves that keep Cordia running.
+                      Keep an eye on growth, community health, and the moves that keep Urban Lounge running.
                     </p>
                   </div>
                   <div className="admin-hero-stats">
@@ -1802,7 +1802,7 @@ export default function AdminPage({ user, setUser }) {
                 <input
                   value={broadcast.subject}
                   onChange={(event) => setBroadcast((prev) => ({ ...prev, subject: event.target.value }))}
-                  placeholder="What is new in Cordia"
+                  placeholder="What is new in Urban Lounge"
                   maxLength={160}
                   required
                 />
