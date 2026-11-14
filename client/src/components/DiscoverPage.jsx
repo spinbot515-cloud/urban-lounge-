@@ -80,7 +80,7 @@ export default function DiscoverPage({ onJoined, onOpen }) {
   return (
     <div className="discover-page">
       <header className="discover-hero">
-        <h1>Find your community on Cordia</h1>
+        <h1>Find your community on Urban Lounge</h1>
         <p>
           Browse public servers and jump in with one click — gaming crews, music rooms, study
           groups and more.
