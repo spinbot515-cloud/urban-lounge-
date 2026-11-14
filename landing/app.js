@@ -65,7 +65,7 @@
   const appUrl = (document.body.dataset.appUrl || '').replace(/\/+$/, '');
 
   // The app lives at /app; "/" is this landing page. Pointing the CTAs at the
-  // bare origin reloaded the pitch instead of opening Cordia.
+  // bare origin reloaded the pitch instead of opening Urban Lounge.
   document.querySelectorAll('.js-app-link').forEach(function (link) {
     link.href = appUrl + '/app';
   });
