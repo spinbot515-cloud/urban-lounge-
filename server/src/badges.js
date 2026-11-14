@@ -4,21 +4,21 @@ const { query } = require('./pg/pool');
 const BADGES = {
   founder: {
     label: 'Founder',
-    description: 'Created the very first Cordia account.',
+    description: 'Created the very first Urban Lounge account.',
     color: '#f5b544',
     icon: 'sparkles',
     grantable: false
   },
   pioneer: {
     label: 'Pioneer',
-    description: 'Joined during the first wave of Cordia.',
+    description: 'Joined during the first wave of Urban Lounge.',
     color: '#2dd4bf',
     icon: 'rocket',
     grantable: false
   },
   staff_member: {
     label: 'Staff Member',
-    description: 'Part of the Cordia crew.',
+    description: 'Part of the Urban Lounge crew.',
     color: '#c7bcff',
     icon: 'badge-check',
     grantable: true
@@ -62,7 +62,7 @@ const BADGES = {
   // purchase path any more, so this is the only way the badge can be earned.
   supporter: {
     label: 'Supporter',
-    description: 'Helped keep Cordia running.',
+    description: 'Helped keep Urban Lounge running.',
     color: '#f5b544',
     icon: 'heart',
     grantable: true
