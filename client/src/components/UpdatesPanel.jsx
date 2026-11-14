@@ -109,7 +109,7 @@ export default function UpdatesPanel() {
       <div className="settings-section-head">
         <div>
           <h1>Updates</h1>
-          <p>See what changed in each release and keep Cordia current.</p>
+          <p>See what changed in each release and keep Urban Lounge current.</p>
         </div>
       </div>
 
@@ -127,12 +127,12 @@ export default function UpdatesPanel() {
               <strong>{line}</strong>
               <small>
                 {status.status === 'downloading'
-                  ? 'You can keep using Cordia while it downloads.'
+                  ? 'You can keep using Urban Lounge while it downloads.'
                   : status.status === 'unavailable'
                     ? 'Install the desktop app to receive updates automatically.'
                     : status.status === 'disabled'
                       ? 'Automatic updates activate in a packaged desktop build.'
-                      : 'Cordia checks for updates automatically after launch.'}
+                      : 'Urban Lounge checks for updates automatically after launch.'}
               </small>
             </div>
           </div>
