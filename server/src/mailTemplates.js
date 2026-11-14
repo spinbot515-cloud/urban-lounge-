@@ -1,6 +1,6 @@
 'use strict';
 
-// Plain string templates, not a template engine. Every message Cordia sends is
+// Plain string templates, not a template engine. Every message Urban Lounge sends is
 // transactional, so the markup is hand-written: a table-based layout is the only
 // thing Outlook 2016, Gmail's clipped view and Apple Mail all agree on.
 
@@ -57,7 +57,7 @@ function layout({ preheader, title, body, origin }) {
   <tr><td align="center" style="padding:32px 16px">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;background:#ffffff;border-radius:16px;border:1px solid ${RULE};overflow:hidden">
       <tr><td style="background:${INK};padding:20px 32px">
-        <span style="font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:17px;font-weight:700;letter-spacing:.2px;color:#ffffff">Cordia</span>
+        <span style="font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:17px;font-weight:700;letter-spacing:.2px;color:#ffffff">Urban Lounge</span>
       </td></tr>
       <tr><td style="padding:32px 32px 8px">
         <h1 style="margin:0 0 18px;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:21px;line-height:1.35;font-weight:700;color:${INK}">${escapeHtml(title)}</h1>
@@ -65,13 +65,13 @@ function layout({ preheader, title, body, origin }) {
       </td></tr>
       <tr><td style="padding:8px 32px 32px">
         <div style="border-top:1px solid ${RULE};padding-top:18px;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:12px;line-height:1.7;color:${MUTED}">
-          Cordia · Latvia · <a href="mailto:admin@cordia.ext.io" style="color:${MUTED};text-decoration:underline">admin@cordia.ext.io</a><br />
+          Urban Lounge · Latvia · <a href="mailto:admin@cordia.ext.io" style="color:${MUTED};text-decoration:underline">admin@cordia.ext.io</a><br />
           ${foot}
         </div>
       </td></tr>
     </table>
     <div style="max-width:560px;margin:14px auto 0;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:11px;line-height:1.6;color:#9aa0b4;text-align:center">
-      You are receiving this because you have a Cordia account.
+      You are receiving this because you have a Urban Lounge account.
     </div>
   </td></tr>
 </table>
@@ -81,35 +81,35 @@ function layout({ preheader, title, body, origin }) {
 
 function textFooter(origin) {
   const site = String(origin || '').replace(/\/+$/, '');
-  const lines = ['', '—', 'Cordia · Latvia · admin@cordia.ext.io'];
+  const lines = ['', '—', 'Urban Lounge · Latvia · admin@cordia.ext.io'];
   if (site) lines.push(`${site}/guidelines · ${site}/privacy · ${site}/terms`);
-  lines.push('', 'You are receiving this because you have a Cordia account.');
+  lines.push('', 'You are receiving this because you have a Urban Lounge account.');
   return lines.join('\n');
 }
 
 function verification({ username, url, minutes, origin }) {
   const subject = 'Confirm your email address';
   const body = `
-    ${paragraphs(`Hi ${username},\n\nConfirm this address and Cordia can reach you about your account. The link works once and expires in ${minutes} minutes.`)}
+    ${paragraphs(`Hi ${username},\n\nConfirm this address and Urban Lounge can reach you about your account. The link works once and expires in ${minutes} minutes.`)}
     ${button(url, 'Confirm email address')}
     ${paragraphs('If the button does not work, paste this link into your browser:')}
     <p style="margin:0 0 20px;font-family:Consolas,Menlo,monospace;font-size:13px;line-height:1.6;word-break:break-all;color:${ACCENT_DEEP}">${escapeHtml(url)}</p>
-    <p style="margin:0 0 8px;font-size:13px;line-height:1.6;color:${MUTED}">Did not create a Cordia account? Ignore this message and nothing happens.</p>`;
+    <p style="margin:0 0 8px;font-size:13px;line-height:1.6;color:${MUTED}">Did not create a Urban Lounge account? Ignore this message and nothing happens.</p>`;
   const text = [
     `Hi ${username},`,
     '',
-    `Confirm this address and Cordia can reach you about your account. The link works once and expires in ${minutes} minutes.`,
+    `Confirm this address and Urban Lounge can reach you about your account. The link works once and expires in ${minutes} minutes.`,
     '',
     url,
     '',
-    'Did not create a Cordia account? Ignore this message and nothing happens.',
+    'Did not create a Urban Lounge account? Ignore this message and nothing happens.',
     textFooter(origin)
   ].join('\n');
   return { subject, html: layout({ preheader: 'One click and your address is confirmed.', title: subject, body, origin }), text };
 }
 
 function passwordReset({ username, url, minutes, origin }) {
-  const subject = 'Reset your Cordia password';
+  const subject = 'Reset your Urban Lounge password';
   const body = `
     ${paragraphs(`Hi ${username},\n\nSomeone asked to reset the password for your account. The link works once and expires in ${minutes} minutes.`)}
     ${button(url, 'Choose a new password')}
@@ -135,7 +135,7 @@ function passwordReset({ username, url, minutes, origin }) {
 }
 
 function suspension({ username, reason, url, origin }) {
-  const subject = 'Your Cordia account has been suspended';
+  const subject = 'Your Urban Lounge account has been suspended';
   const detail = reason
     ? paragraphs(`Reason given:\n\n${reason}`)
     : paragraphs('No reason was recorded.');
