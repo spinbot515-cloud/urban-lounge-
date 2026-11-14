@@ -1,17 +1,16 @@
 {
-  "name": "cordia-client",
+  "name": "urban-lounge-client",
   "version": "0.13.9",
   "private": true,
-  "description": "Cordia web, desktop, and mobile client.",
+  "description": "Urban Lounge web, desktop, and mobile client.",
   "license": "AGPL-3.0-only",
-  "homepage": "https://cordia.ext.io",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VilnisGrinbergs2000/Cordia.git",
+    "url": "git+https://github.com/spinbot515-cloud/urban-lounge-.git",
     "directory": "client"
   },
   "bugs": {
-    "url": "https://github.com/VilnisGrinbergs2000/Cordia/issues"
+    "url": "https://github.com/spinbot515-cloud/urban-lounge-/issues"
   },
   "engines": {
     "node": ">=22"
