@@ -11,7 +11,7 @@ import {
 async function request(path, { method = 'GET', body, isForm = false } = {}) {
   const headers = {};
   const nativeToken = getNativeToken();
-  if (isNativeApp) headers['X-Urban Lounge-Client'] = 'native';
+  if (isNativeApp) headers['X-Cordia-Client'] = 'native';
   if (nativeToken) headers.Authorization = `Bearer ${nativeToken}`;
   let payload;
   if (isForm) {
@@ -74,7 +74,7 @@ const api = {
   download: async (path) => {
     const headers = {};
     const nativeToken = getNativeToken();
-    if (isNativeApp) headers['X-Urban Lounge-Client'] = 'native';
+    if (isNativeApp) headers['X-Cordia-Client'] = 'native';
     if (nativeToken) headers.Authorization = `Bearer ${nativeToken}`;
     const response = await fetch(apiUrl(path), {
       headers,
@@ -96,7 +96,7 @@ const api = {
     const match = /filename="([^"]+)"/i.exec(disposition);
     return {
       blob: await response.blob(),
-      filename: match ? match[1] : 'cordia-export.json'
+      filename: match ? match[1] : 'urban-lounge-export.json'
     };
   }
 };
