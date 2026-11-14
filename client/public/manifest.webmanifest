@@ -16,22 +16,22 @@
   "theme_color": "#0F1117",
   "icons": [
     {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
+      "src": "/urban-lounge-mark.svg",
+      "sizes": "any",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icon-512.png",
-      "sizes": "512x512",
+      "src": "/urban-lounge-mark.svg",
+      "sizes": "any",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icon-maskable-512.png",
-      "sizes": "512x512",
+      "src": "/urban-lounge-mark.svg",
+      "sizes": "any",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any"
     }
   ],
   "shortcuts": [
@@ -39,7 +39,7 @@
       "name": "Open Urban Lounge",
       "short_name": "Open",
       "url": "/",
-      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+      "icons": [{ "src": "/urban-lounge-mark.svg", "sizes": "any", "type": "image/png" }]
     }
   ]
 }
