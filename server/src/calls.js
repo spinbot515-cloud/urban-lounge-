@@ -241,7 +241,7 @@ function attachCallHandlers(io, socket, user) {
         [targetId],
         {
           title: `Incoming call from ${user.display_name || user.username}`,
-          body: 'Open Cordia to answer.',
+          body: 'Open Urban Lounge to answer.',
           tag: `call-${callId}`,
           scopeType: dm ? 'dm' : 'call',
           scopeId: dm ? dm.id : null,
