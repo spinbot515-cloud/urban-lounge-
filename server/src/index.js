@@ -504,7 +504,7 @@ async function start() {
   // a bypass of TLS or an accident. HOST is opt-in for the direct-exposure case.
   const host = process.env.HOST || '127.0.0.1';
   server.listen(port, host, () => {
-    console.log(`Cordia API listening on http://${host}:${port}`);
+    console.log(`Urban Lounge API listening on http://${host}:${port}`);
     startRetention();
     startThreadArchiver();
   });
