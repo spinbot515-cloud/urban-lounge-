@@ -86,7 +86,7 @@ export default function RemindModal({ message, onClose, onScheduled }) {
         <div>
           <span className="eyebrow-mini">Message</span>
           <h2>Remind me</h2>
-          <p>Cordia will bring this message back when you ask.</p>
+          <p>Urban Lounge will bring this message back when you ask.</p>
         </div>
         <Bell size={20} />
       </div>
