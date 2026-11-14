@@ -92,7 +92,7 @@ export default function SavedModal({ onClose, onOpenSavedMessage }) {
           <p>
             {tab === 'saved'
               ? 'Messages you saved. Only you can see this list.'
-              : 'Messages Cordia will bring back to you. Only you can see this list.'}
+              : 'Messages Urban Lounge will bring back to you. Only you can see this list.'}
           </p>
         </div>
         {tab === 'saved' ? <Bookmark size={20} /> : <Bell size={20} />}
