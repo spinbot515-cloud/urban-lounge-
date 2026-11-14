@@ -144,7 +144,7 @@ function normalizeAttachment(value, warnings) {
   if (!raw || typeof raw !== 'object') return null;
   const url = trim(raw.url);
   if (!/^\/uploads\/[a-zA-Z0-9._-]+$/.test(url)) {
-    addWarning(warnings, 'Some attachments were skipped because they are not Cordia upload URLs.');
+    addWarning(warnings, 'Some attachments were skipped because they are not Urban Lounge upload URLs.');
     return null;
   }
   return {
@@ -325,7 +325,7 @@ function parseDiscord(guild, channelsValue, rolesValue, warnings) {
     const name = cleanName(role.name, 32);
     if (!name) continue;
     if (nameKey(name) === '@everyone' || String(role.id) === String(guildObject?.id)) {
-      addWarning(warnings, 'The Discord @everyone role was skipped; Cordia keeps its existing Members permissions.');
+      addWarning(warnings, 'The Discord @everyone role was skipped; Urban Lounge keeps its existing Members permissions.');
       continue;
     }
     if (role.managed) {
@@ -344,7 +344,7 @@ function parseDiscord(guild, channelsValue, rolesValue, warnings) {
 
   addWarning(
     warnings,
-    'Discord imports restore categories, channels, and roles. Message history is imported from Cordia exports.'
+    'Discord imports restore categories, channels, and roles. Message history is imported from Urban Lounge exports.'
   );
 
   return {
@@ -433,7 +433,7 @@ function parseImportFiles(files) {
 
   if (!guild && asArray(channels).length === 0 && asArray(roles).length === 0) {
     throw new TransferError(
-      'Unsupported export. Choose a Cordia server export or Discord guild.json, channels.json, and roles.json files.'
+      'Unsupported export. Choose a Urban Lounge server export or Discord guild.json, channels.json, and roles.json files.'
     );
   }
 
