@@ -9,7 +9,7 @@
   // Only the artifacts the download page actually links to. Checking names that
   // were never uploaded reports a permanent "Check links" and trains people to
   // ignore the row.
-  const downloadFiles = ['downloads/Urban Lounge-Setup-0.13.6.exe'];
+  const downloadFiles = ['downloads/Urban-Lounge-Setup-0.13.6.exe'];
 
   const refreshButton = document.getElementById('status-refresh');
   const overallLabel = document.getElementById('status-overall-label');
