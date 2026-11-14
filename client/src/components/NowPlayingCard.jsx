@@ -51,7 +51,7 @@ export default function NowPlayingCard() {
       {bridge ? (
         <>
           <p className="spotify-copy">
-            Cordia reads Spotify's media session from Windows - no account to link and no API key.
+            Urban Lounge reads Spotify's media session from Windows - no account to link and no API key.
             Nothing else on this computer is read: a browser tab or a video player stays private.
             Only the title, artist and position are sent, and only while this stays on.
           </p>
