@@ -118,7 +118,7 @@ async function sendToUsers(userIds, payload, options = {}) {
 }
 
 function preview(message) {
-  if (message.encrypted) return 'New encrypted message. Open Cordia to decrypt.';
+  if (message.encrypted) return 'New encrypted message. Open Urban Lounge to decrypt.';
   const text = String(message.content || '').replace(/\s+/g, ' ').trim();
   if (text) return text.length > 140 ? `${text.slice(0, 137)}...` : text;
   if (message.attachment?.name) return `Sent an attachment: ${message.attachment.name}`;
