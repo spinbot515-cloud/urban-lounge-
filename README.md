@@ -1,25 +1,25 @@
 <div align="center">
 
-<img src="images/codi_mascot.png" alt="Codi, the Cordia mascot" width="132" />
+<img src="images/codi_mascot.png" alt="Codi, the Urban Lounge mascot" width="132" />
 
-# Cordia
+# Urban Lounge
 
 **A self-hosted realtime community platform: servers, channels, threads, forums, direct messages with end-to-end encryption, voice and video, bots, and an admin console.**
 
 [Live demo](https://cordia.ext.io) · [Documentation](docs/README.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
 
-[![CI](https://github.com/VilnisGrinbergs2000/Cordia/actions/workflows/ci.yml/badge.svg)](https://github.com/VilnisGrinbergs2000/Cordia/actions/workflows/ci.yml)
+[![CI](https://github.com/VilnisGrinbergs2000/Urban Lounge/actions/workflows/ci.yml/badge.svg)](https://github.com/VilnisGrinbergs2000/Urban Lounge/actions/workflows/ci.yml)
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
 [![Node.js 22+](https://img.shields.io/badge/node-22%2B-339933.svg)](https://nodejs.org/)
 [![PostgreSQL 14+](https://img.shields.io/badge/postgresql-14%2B-4169E1.svg)](https://www.postgresql.org/)
 
 </div>
 
-Cordia is a complete, self-hostable chat application. One Node.js process serves the HTTP API, the Socket.IO gateway, the React client, and the marketing site; PostgreSQL is the only data store.
+Urban Lounge is a complete, self-hostable chat application. One Node.js process serves the HTTP API, the Socket.IO gateway, the React client, and the marketing site; PostgreSQL is the only data store.
 
 There is no paid tier, no checkout, and no feature gating. Every feature is available to every account: no limits on messages, history, search, servers, channels, threads, or DMs. The only ceilings are technical storage limits — 50 MB per upload and 5 GB per account — and they apply equally to everyone.
 
-The public instance at **<https://cordia.ext.io>** runs this code.
+The public instance at **<https://urban-lounge.ext.io>** runs this code.
 
 ## Contents
 
@@ -58,7 +58,7 @@ The public instance at **<https://cordia.ext.io>** runs this code.
 | API | Node.js 22+, Express 5, Socket.IO 4, PostgreSQL (`pg`), JWT, bcryptjs, multer, nodemailer, `web-push`, Helmet |
 | Realtime | Socket.IO rooms for chat and signalling, WebRTC for media |
 | Data | PostgreSQL 14+; forward-only SQL migrations applied on boot |
-| Desktop | Electron 45, electron-builder, `electron-updater`, custom `cordia://app` protocol |
+| Desktop | Electron 45, electron-builder, `electron-updater`, custom `urban-lounge://app` protocol |
 | Mobile | Capacitor 8 (Android/iOS), `@capacitor/local-notifications` |
 | Marketing | Static HTML, CSS, and vanilla JavaScript served by the same Express process |
 
@@ -67,18 +67,18 @@ The public instance at **<https://cordia.ext.io>** runs this code.
 **Requirements:** Node.js 22+ (24 LTS recommended), PostgreSQL 14+, and a modern browser for WebRTC.
 
 ```bash
-git clone https://github.com/VilnisGrinbergs2000/Cordia.git
-cd Cordia
+git clone https://github.com/VilnisGrinbergs2000/Urban Lounge.git
+cd Urban Lounge
 
 # 1. Install root, server, and client dependencies
 npm run install:all
 
 # 2. Create a database (or use an existing PostgreSQL server)
-createdb cordia
+createdb urban-lounge
 
 # 3. Configure the API
 cp server/.env.example server/.env
-#    Edit DATABASE_URL in server/.env if your database is not localhost/cordia
+#    Edit DATABASE_URL in server/.env if your database is not localhost/urban-lounge
 
 # 4. Run the API and Vite dev server together
 npm run dev
@@ -170,7 +170,7 @@ The full checklist, including Caddy and nginx examples, systemd, VAPID keys, SMT
 
 ## Project status and limitations
 
-Cordia is under active development. The hosted demo and the repository move together, but interfaces may still change between releases.
+Urban Lounge is under active development. The hosted demo and the repository move together, but interfaces may still change between releases.
 
 Known limitations:
 
@@ -188,10 +188,10 @@ By contributing, you agree that your contributions are licensed under the GNU Af
 
 ## License
 
-Cordia is licensed under the **GNU Affero General Public License, version 3.0 only** (`AGPL-3.0-only`). See [LICENSE](LICENSE) for the full text.
+Urban Lounge is derived from Cordia and remains licensed under the **GNU Affero General Public License, version 3.0 only** (`AGPL-3.0-only`). See [LICENSE](LICENSE) for the full text.
 
-Copyright © 2026 Cordia contributors.
+Copyright © 2026 Urban Lounge contributors.
 
-If you run a modified version as a network service, the AGPL requires you to offer its users the corresponding source code. The hosted instance at <https://cordia.ext.io> is one deployment of this repository; self-hosting is supported.
+If you run a modified version as a network service, the AGPL requires you to offer its users the corresponding source code. The hosted instance at <https://urban-lounge.ext.io> is one deployment of this repository; self-hosting is supported.
 
-The Cordia name, the Codi mascot, and the Cordia logo are trademarks of the project and are **not** licensed under the AGPL. You may fork the code and run it, but please do not present a fork as the official Cordia service. Third-party artwork and fonts are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+The Urban Lounge name, the Codi mascot, and the Urban Lounge logo are trademarks of the project and are **not** licensed under the AGPL. You may fork the code and run it, but please do not present a fork as the official Urban Lounge service. Third-party artwork and fonts are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
