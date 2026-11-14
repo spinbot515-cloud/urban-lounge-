@@ -1,6 +1,6 @@
-appId: app.cordia.client
-productName: Cordia
-copyright: Copyright 2026 Cordia
+appId: app.urban-lounge.client
+productName: Urban Lounge
+copyright: Copyright 2026 Urban Lounge
 directories:
   output: release
   buildResources: electron/build
@@ -17,7 +17,7 @@ win:
 nsis:
   # No spaces in the artifact name: every script that installs this file
   # would otherwise need to quote it.
-  artifactName: Cordia-Setup-${version}.${ext}
+  artifactName: Urban Lounge-Setup-${version}.${ext}
   oneClick: false
   perMachine: false
   allowToChangeInstallationDirectory: true
@@ -27,14 +27,14 @@ mac:
   category: public.app-category.social-networking
   icon: electron/build/icon.png
   extendInfo:
-    NSMicrophoneUsageDescription: Cordia uses your microphone for voice calls.
-    NSCameraUsageDescription: Cordia uses your camera for video calls.
+    NSMicrophoneUsageDescription: Urban Lounge uses your microphone for voice calls.
+    NSCameraUsageDescription: Urban Lounge uses your camera for video calls.
 linux:
   target:
     - AppImage
   category: Network
-  executableName: cordia
+  executableName: urban-lounge
   syncDesktopName: true
-  synopsis: Cordia community chat
-  description: Cordia is a realtime community platform with voice, video, friends, profiles, badges and an admin console.
+  synopsis: Urban Lounge community chat
+  description: Urban Lounge is a realtime community platform with voice, video, friends, profiles, badges and an admin console.
   icon: electron/build/icon.png
