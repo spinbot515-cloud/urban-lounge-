@@ -385,7 +385,7 @@ function EncryptedContent({ message, peerPublicKey, peerId, onUnlockE2ee, onDecr
 // never a verdict, so the copy explains the pattern instead of accusing.
 const SAFETY_COPY = {
   secrecy: 'They are asking you to keep this from people you trust.',
-  off_platform: "They want to move the chat to another app, where Cordia can't help.",
+  off_platform: "They want to move the chat to another app, where Urban Lounge can't help.",
   money: 'Gift cards and payments are a common scam pattern.',
   age_probe: 'They are asking about your age.',
   personal_info: 'They are asking for personal details.'
