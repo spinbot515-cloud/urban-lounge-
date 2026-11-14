@@ -172,7 +172,7 @@ export default function InvitePage({ code, user, onAuth, auto = false }) {
                   <UserPlus size={16} />
                 )}
                 {openingApp
-                  ? 'Opening Cordia...'
+                  ? 'Opening Urban Lounge...'
                   : busy
                     ? 'Joining...'
                     : user === undefined
