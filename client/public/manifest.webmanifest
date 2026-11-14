@@ -18,19 +18,19 @@
     {
       "src": "/urban-lounge-mark.svg",
       "sizes": "any",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any"
     },
     {
       "src": "/urban-lounge-mark.svg",
       "sizes": "any",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any"
     },
     {
       "src": "/urban-lounge-mark.svg",
       "sizes": "any",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any"
     }
   ],
@@ -39,7 +39,7 @@
       "name": "Open Urban Lounge",
       "short_name": "Open",
       "url": "/",
-      "icons": [{ "src": "/urban-lounge-mark.svg", "sizes": "any", "type": "image/png" }]
+      "icons": [{ "src": "/urban-lounge-mark.svg", "sizes": "any", "type": "image/svg+xml" }]
     }
   ]
 }
