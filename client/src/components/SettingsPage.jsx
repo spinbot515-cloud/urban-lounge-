@@ -108,7 +108,7 @@ const TABS = [
   { key: 'encryption', label: 'Encryption', icon: LockKeyhole },
   { key: 'updates', label: 'Updates', icon: Rocket },
   { key: 'developers', label: 'Developers', icon: Bot },
-  { key: 'support', label: 'Support Cordia', icon: Heart }
+  { key: 'support', label: 'Support Urban Lounge', icon: Heart }
 ];
 
 // Radio groups in the Privacy tab. Order matters: most open first, most
@@ -311,7 +311,7 @@ export default function SettingsPage({
   function testNotification() {
     if (notificationPrefs.sounds) playMessageSound();
     showDesktopNotification({
-      title: 'Cordia notifications are on',
+      title: 'Urban Lounge notifications are on',
       body: 'New messages and incoming calls will appear like this.'
     });
   }
@@ -497,7 +497,7 @@ export default function SettingsPage({
     try {
       await forgetRememberedDevice(user.id);
       setDeviceRemembered(false);
-      setDeviceNotice('Cordia will ask for your password the next time it starts.');
+      setDeviceNotice('Urban Lounge will ask for your password the next time it starts.');
     } catch (err) {
       setDeviceError(err.message);
     } finally {
@@ -616,11 +616,11 @@ export default function SettingsPage({
 
       <main className="settings-content">
         <header className="settings-topbar">
-          <button className="icon-btn" onClick={close} title="Back to Cordia">
+          <button className="icon-btn" onClick={close} title="Back to Urban Lounge">
             <ArrowLeft size={18} />
           </button>
           <div>
-            <span>Cordia</span>
+            <span>Urban Lounge</span>
             <strong>Settings</strong>
           </div>
           <button className="icon-btn" onClick={close} title="Close settings">
@@ -1009,7 +1009,7 @@ export default function SettingsPage({
               <div className="settings-group">
                 <div className="settings-group-head">
                   <h3>Alerts</h3>
-                  <p>Desktop alerts appear when Cordia is open and you are away.</p>
+                  <p>Desktop alerts appear when Urban Lounge is open and you are away.</p>
                 </div>
 
                 <div className="notification-list">
@@ -1070,10 +1070,10 @@ export default function SettingsPage({
                         <strong>Background notifications</strong>
                         <span>
                           {!pushState.supported
-                            ? 'This browser cannot receive alerts while Cordia is closed.'
+                            ? 'This browser cannot receive alerts while Urban Lounge is closed.'
                             : pushState.enabled
-                              ? 'On. Alerts arrive here even when Cordia is closed.'
-                              : 'Get alerts when Cordia is closed. Requires notification permission.'}
+                              ? 'On. Alerts arrive here even when Urban Lounge is closed.'
+                              : 'Get alerts when Urban Lounge is closed. Requires notification permission.'}
                         </span>
                         {pushState.error && (
                           <span className="notification-error">{pushState.error}</span>
@@ -1368,7 +1368,7 @@ export default function SettingsPage({
                 <div className="settings-group-head">
                   <h3>Remembered device</h3>
                   <p>
-                    Cordia can store your unlocked key with your operating system's secure
+                    Urban Lounge can store your unlocked key with your operating system's secure
                     storage so you do not need to enter your password every time the app starts.
                   </p>
                 </div>
@@ -1380,7 +1380,7 @@ export default function SettingsPage({
                       <p>
                         {deviceRemembered
                           ? 'This device is remembered. Anyone who can use your computer account can read your encrypted messages.'
-                          : 'This device is not remembered. Cordia will ask for your password when it starts.'}
+                          : 'This device is not remembered. Urban Lounge will ask for your password when it starts.'}
                       </p>
                     </div>
                     <div className="settings-actions">
@@ -1411,7 +1411,7 @@ export default function SettingsPage({
                 ) : (
                   <div className="settings-note">
                     <LockKeyhole size={17} />
-                    <p>Secure device storage is available in the Cordia desktop app.</p>
+                    <p>Secure device storage is available in the Urban Lounge desktop app.</p>
                   </div>
                 )}
               </div>
