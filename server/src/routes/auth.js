@@ -49,7 +49,7 @@ async function sessionPayload(req, user, token) {
     // /uploads assets. It unlocks uploads only.
     uploadToken: issueUploadToken(user.id).token
   };
-  if (req.get('X-Cordia-Client') === 'native') payload.token = token;
+  if (req.get('X-Urban Lounge-Client') === 'native') payload.token = token;
   return payload;
 }
 
@@ -178,7 +178,7 @@ router.post('/auth/login', authLimiter, loginAccountLimiter, asyncHandler(async 
   res.json(await sessionPayload(req, user, token));
 }));
 
-// Confirming an address is a nudge, not a gate: people can use Cordia with an
+// Confirming an address is a nudge, not a gate: people can use Urban Lounge with an
 // unconfirmed email. Three requests per quarter hour covers a typo and still
 // stops one account from being used to post mail at a stranger.
 const verifyResendLimiter = rateLimit({
