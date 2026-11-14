@@ -92,14 +92,14 @@ export default function ServerSettingsPage({
           </button>
           <button className="settings-nav-item" onClick={onClose}>
             <ArrowLeft size={17} />
-            Back to Cordia
+            Back to Urban Lounge
           </button>
         </div>
       </aside>
 
       <main className="settings-content">
         <header className="settings-topbar">
-          <button className="icon-btn" onClick={onClose} title="Back to Cordia">
+          <button className="icon-btn" onClick={onClose} title="Back to Urban Lounge">
             <ArrowLeft size={18} />
           </button>
           <div>
