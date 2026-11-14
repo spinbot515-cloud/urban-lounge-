@@ -295,7 +295,7 @@ export default function AuthPage({ onAuth }) {
             to talk.
           </h1>
           <p>
-            Cordia keeps your servers, conversations, and friends together without the noise.
+            Urban Lounge keeps your servers, conversations, and friends together without the noise.
           </p>
         </div>
         <div className="auth-features">
