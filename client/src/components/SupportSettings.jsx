@@ -1,6 +1,6 @@
 import { Heart } from 'lucide-react';
 
-// Cordia is free and funded by donations, so this tab is not a paywall: it is
+// Urban Lounge is free and funded by donations, so this tab is not a paywall: it is
 // the one place that says how to help pay for the servers. The QR is a static
 // asset, so opening the tab costs one cached image and nothing else.
 export default function SupportSettings() {
@@ -8,9 +8,9 @@ export default function SupportSettings() {
     <section className="settings-section">
       <div className="settings-section-head">
         <div>
-          <h1>Support Cordia</h1>
+          <h1>Support Urban Lounge</h1>
           <p>
-            Cordia is free, and it stays free - every feature, every account, no ads and no
+            Urban Lounge is free, and it stays free - every feature, every account, no ads and no
             trial. If you want to help with the hosting bill, this is how.
           </p>
         </div>
