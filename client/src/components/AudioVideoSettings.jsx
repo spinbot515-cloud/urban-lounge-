@@ -264,7 +264,7 @@ export default function AudioVideoSettings() {
       <div className="settings-section-head">
         <div>
           <h1>Audio &amp; Video</h1>
-          <p>Choose how Cordia uses your microphone, speakers, and camera.</p>
+          <p>Choose how Urban Lounge uses your microphone, speakers, and camera.</p>
         </div>
       </div>
 
@@ -421,7 +421,7 @@ export default function AudioVideoSettings() {
           <div className="settings-group">
             <div className="settings-group-head">
               <h3>Camera</h3>
-              <p>Preview the camera Cordia will use for video.</p>
+              <p>Preview the camera Urban Lounge will use for video.</p>
             </div>
 
             <label className="field">
